@@ -1,9 +1,33 @@
 
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    height: 100%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+
 }
 .contenido{
     text-align: center;
     color: white;
     background-color: rgb(74, 184, 248);
 }
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.container h2{
+    margin-top: 5px;
+}
+
+.izquierda{
+    width: 50%;
+    margin-top: 5px;
+}
+
+.derecha{
+    width: 50%;
+}
+
