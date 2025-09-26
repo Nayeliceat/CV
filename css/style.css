@@ -1,0 +1,9 @@
+
+body{
+    height: 100%;
+}
+.contenido{
+    text-align: center;
+    color: white;
+    background-color: rgb(74, 184, 248);
+}
