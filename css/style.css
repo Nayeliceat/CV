@@ -1,33 +1,107 @@
-
-*{
+/* GENERAL */
+body {
     margin: 0;
-    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #000000;
+    line-height: 1.6;
 }
-body{
-  font-family:Verdana, Geneva, Tahoma, sans-serif
 
-}
-.contenido{
-    text-align: center;
+/* HEADER */
+header.contenido {
+    background-color: #8f9cff;
     color: white;
-    background-color: rgb(74, 184, 248);
+    padding: 30px 20px;
+    text-align: center;
 }
 
-.container{
+.texto-foto {
     display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-}
-.container h2{
-    margin-top: 5px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.izquierda{
-    width: 50%;
-    margin-top: 5px;
+.foto img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    background-color: #ddd;
+    margin-bottom: 10px;
 }
 
-.derecha{
-    width: 50%;
+/* CONTENEDOR PRINCIPAL */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+/* COLUMNAS */
+.izquierda, .derecha {
+    flex: 1;
+}
+
+/* SECCIONES */
+.Personales,
+.Aptitudes,
+.OtrosDatos,
+.descripcion,
+.estudios,
+.formacion,
+.experiencia {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* TITULOS */
+h2 {
+    color: #000000;
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c5cae9;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #000001;
+    margin: 10px 0 5px 0;
+}
+
+h4 {
+    margin: 5px 0;
+    color: #464545;
+    font-weight: normal;
+}
+
+/* LISTAS */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin-bottom: 6px;
+}
+
+/* TEXTOS */
+p {
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE - DISEÑO ADAPTABLE */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        padding: 0 10px;
+    }
 }
 
